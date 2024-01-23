@@ -12,11 +12,26 @@
   <!-- LINK CSS -->
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
+
+  <header>
+    <!-- Top Bar -->
+    <div class="top-bar d-flex">
+      <div class="speaker-view">
+        <i class="fa-solid fa-table-cells"></i>
+        <span>Speaker View</span>
+      </div>
+      <div class="full-screen">
+        <i class="fa-solid fa-maximize"></i>
+      </div>
+    </div>
+    <!-- /Top Bar -->
+  </header>
   
   <main>
+    <!-- Users Container -->
     <div class="container d-flex">
-
       <!-- User Card -->
       <div class="user-card">
         <img src="assets/img/user-img.jpg" alt="">
@@ -366,15 +381,73 @@
         </div>
       </div>
       <!-- /User Card -->
-
-
-
     </div>
-    
+    <!-- /Users Container -->
   </main>
 
-  <footer>
+  <footer class="d-flex">
+    <!-- Comunication Command -->
+    <nav>
+      <ul class="d-flex">
+        <li class="d-flex">
+          <i class="fa-solid fa-microphone"></i>
+          <span class="command-name">Mute</span>
+        </li>
+        <li class="d-flex">
+          <i class="fa-solid fa-chevron-up"></i>
+        </li>
+        <li class="d-flex">
+          <i class="fa-solid fa-video"></i>
+          <span>Stop Video</span>
+        </li>
+      </ul>
+    </nav>
+    <!-- /Comunication Command -->
 
+    <!-- Meeting Command -->
+    <nav>
+      <ul class="d-flex">
+        <li class="d-flex">
+          <i class="fa-solid fa-user-plus"></i>
+          <span>Invite</span>
+        </li>
+        <li class="d-flex">
+          <i class="fa-solid fa-users"></i>
+          <span>Manage Partecipants</span>
+        </li>
+        <li class="d-flex">
+          <i class="fa-solid fa-chart-column"></i>
+          <span>Polling</span>
+        </li>
+        <li class="d-flex active">
+          <i class="fa-solid fa-share-from-square"></i>
+          <span>Share Screen</span>
+        </li>
+        <li class="d-flex">
+          <i class="fa-solid fa-chevron-up"></i>
+        </li>
+        <li class="d-flex">
+          <i class="fa-solid fa-comment"></i>
+          <span>Chat</span>
+        </li>
+        <li class="d-flex">
+          <i class="fa-solid fa-record-vinyl"></i>
+          <span>Record</span>
+        </li>
+        <li class="d-flex">
+          <i class="fa-solid fa-table-cells-large"></i>
+          <span>Breakout Rooms</span>
+        </li>
+        <li class="d-flex">
+          <i class="fa-solid fa-ellipsis"></i>
+          <span>More</span>
+        </li>
+      </ul>
+    </nav>
+    <!-- /Meeting Command -->
+
+    <!-- End Meeting -->
+    <span class="end-meeting">End Meeting</span>
   </footer>
 </body>
 </html>
